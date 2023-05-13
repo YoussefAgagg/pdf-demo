@@ -1,11 +1,8 @@
 package com.github.youssefagagg.pdfdemo.service;
 
 
-import com.github.youssefagagg.pdfdemo.entity.User;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-
-import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 import org.thymeleaf.context.Context;
 import org.thymeleaf.spring6.SpringTemplateEngine;

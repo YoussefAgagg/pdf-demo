@@ -13,7 +13,7 @@ public class PDFController {
     private final PDFService pdfService;
 
     @GetMapping("/users/report")
-    public ResponseEntity<Resource> generateUsersReportPDF() throws Exception {
+    public ResponseEntity<Resource> generateUsersReportPDFHtml() throws Exception {
         return pdfService.generateUsersReportPDF();
 
     }
