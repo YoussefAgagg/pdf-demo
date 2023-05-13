@@ -19,13 +19,8 @@ public class PDFController {
     private final PDFService pdfService;
 
     @GetMapping("/html/users-pdf-generator")
-    public ResponseEntity<Resource> generateUsersReportPDFHtml() throws DocumentException, IOException {
-        return pdfService.generateUsersReportPDFHtml();
-
-    }
-    @GetMapping("/jasper/users-pdf-generator")
-    public ResponseEntity<Resource> generateUsersReportPDFJasper() throws DocumentException, JRException, FileNotFoundException {
-        return pdfService.generateUsersReportPDFJasper();
+    public ResponseEntity<Resource> generateUsersReportPDFHtml() throws Exception {
+        return pdfService.generateUsersReportPDF();
 
     }
 }
